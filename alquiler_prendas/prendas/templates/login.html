@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/login.css' %}">
+
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <img src="{% static 'img/user.png' %}" alt="Usuario" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+            <h1>Iniciar Sesión</h1>
+        </div>
+        {% if error_message %}
+            <p class="error-message">{{ error_message }}</p>
+        {% endif %}
+        <form method="POST">
+            {% csrf_token %}
+            <label for="username">Usuario (Email):</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Ingresar</button>
+        </form>
+        <p class="forgot-password">¿Olvidaste tu usuario o contraseña?</p>
+        <div class="social-login">
+            <p>O ingresa con:</p>
+            <div class="social-icons">
+                <img src="{% static 'img/facebook.png' %}" alt="Facebook">
+                <img src="{% static 'img/instagram.png' %}" alt="Instagram">
+                <img src="{% static 'img/gmail.png' %}" alt="Gmail">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

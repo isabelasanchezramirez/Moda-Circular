@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Color de fondo */
+}
+
+header {
+    background-color: #ffffff; /* Blanco */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding */
+    display: flex; /* Muestra los elementos en fila */
+    justify-content: center; /* Centra los elementos */
+}
+
+nav ul li {
+    margin: 0 15px; /* Espaciado entre los elementos del menú */
+}
+
+nav ul li a {
+color: #333; /* Color del texto */
+text-decoration: none; /* Elimina el subrayado */
+padding: 10px; /* Espaciado interno */
+transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+nav ul li a:hover {
+background-color: #a8e6cf; /* Color de fondo al pasar el mouse */
+color: #245d27; /* Cambia el color del texto al pasar el mouse */
+border-radius: 5px; /* Bordes redondeados */
+}
+
+nav ul li a.cta {
+    background-color: #4CAF50; /* Verde */
+    color: white; /* Texto blanco */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.icon_inicio{
+    width: 15px;
+}
+
+main {
+    text-align: center;
+    padding: 50px 20px;
+}
+.p_inicio{
+    text-align: left;
+    margin-left: 60px;
+    margin-right:60px ;
+    padding: 20px;
+}
+.p_des{
+    text-align: left;
+}
+
+h1 {
+    color: #388e3c; /* Verde oscuro */
+}
+
+.card-container {
+    display: flex; /* Muestra las tarjetas en fila */
+    justify-content: center; /* Centra las tarjetas */
+    margin-top: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 10px; /* Espaciado entre tarjetas */
+    width: 300px; /* Ancho fijo para las tarjetas */
+}
+.card-image {
+width: 100px; /* Ancho de la imagen */
+height: 100px; /* Alto de la imagen */
+border-radius: 50%; /* Hace que la imagen sea circular */
+object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+margin-bottom: 15px; /* Espaciado entre la imagen y el texto */
+}
+
+.card h2 {
+    color: #4CAF50; /* Verde */
+}
+
+.card p {
+    color: #555; /* Color del texto */
+}
+
+.action-button {
+background: linear-gradient(to right, #a8e6cf, #dcedc1); /* Degradado */
+color: #1a4c1d; /* Color del texto */
+border: none; /* Sin borde */
+border-radius: 5px; /* Bordes redondeados */
+padding: 10px 20px; /* Espaciado interno */
+font-size: 16px; /* Tamaño de fuente */
+cursor: pointer; /* Cambia el cursor al pasar el mouse */
+margin-top: 15px; /* Espaciado superior */
+transition: background 0.3s; /* Transición suave */
+}
+
+.action-button:hover {
+background: linear-gradient(to right, #dcedc1, #a8e6cf); /* Degradado invertido al pasar el mouse */
+}
+.main-description {
+text-align: center; /* Centra el texto */
+margin-bottom: 30px; /* Espaciado inferior */
+max-width: 800px; /* Ancho máximo para el texto */
+margin-left: auto; /* Centra el contenedor */
+margin-right: auto; /* Centra el contenedor */
+}

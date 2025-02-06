@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Categorias</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/inicio.css' %}">   
+    <link rel="stylesheet" type="text/css" href="{% static 'css/categorias.css' %}">   
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a a href="{% url 'inicio' %}">Inicio 
+                <img class="icon_inicio" src="{% static 'img/inicio.png' %}" alt="inicio" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </a></li>
+                <li><a href="#">Prendas
+                <img class="icon_inicio" src="{% static 'img/prendas.png' %}" alt="prendas" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </a></li>
+                <li><a href="#">Categorías</a>
+                    <img class="icon_inicio" src="{% static 'img/categorias.png' %}" alt="categorias" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </li>
+                <li><a href="#">Sobre Nosotros</a>
+                    <img class="icon_inicio" src="{% static 'img/nosotros.png' %}" alt="sobre_nosotros" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </li>
+                <li><a href="#">Cómo Funciona</a>
+                    <img class="icon_inicio" src="{% static 'img/funciona.png' %}" alt="funciona" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </li>
+                <li><a href="#">Testimonios</a>
+                    <img class="icon_inicio" src="{% static 'img/testimonios.png' %}" alt="Testimonios" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </li>
+                <li><a href="#">Contacto</a>
+                    <img class="icon_inicio" src="{% static 'img/contacto.png' %}" alt="contacto" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </li>
+                <li><a href="#">Mi Cuenta</a>
+                    <img class="icon_inicio" src="{% static 'img/cuenta.png' %}" alt="cuenta" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </li>
+                <li><a href="#">Carrito</a>
+                    <img class="icon_inicio" src="{% static 'img/carrito.png' %}" alt="carrito" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        
+        <!-- Sección de Categorías -->
+        <section class="categories-section">
+            <h2>Categorías</h2>
+            <div class="categories-container">
+                <div class="category-card">
+                    <h3>Mujeres</h3>
+                    <img src="{% static 'img/mujer.jpg' %}" alt="Mujer" class="category-image">
+
+                    <p>Versatilidad y estilo para cada ocasión.
+                         Desde el día a día hasta eventos especiales, 
+                         ¡cada prenda cuenta tu historia!</p>
+                </div>
+                <div class="category-card">
+                    <h3>Niñas</h3>
+                    <img src="{% static 'img/nina.jpg' %}" alt="Nina" class="category-image">
+
+                    <p>Moda divertida y cómoda para pequeñas 
+                        aventureras. Perfectas para jugar, aprender y brillar 
+                        en cualquier momento.</p>
+                </div>
+                <div class="category-card">
+                    <h3>Hombres</h3>
+                    <img src="{% static 'img/hombre.jpg' %}" alt="Hombre" class="category-image">
+
+                    <p>Estilo moderno y clásico para el hombre que se adapta
+                         a cada situación. Desde la oficina hasta el fin de semana,
+                          ¡siempre listo!</p>
+                </div>
+                <div class="category-card">
+                    <h3>Niños</h3>
+                    <img src="{% static 'img/nino.jpg' %}" alt="Nino" class="category-image">
+                    <p>Ropa resistente y cómoda para los pequeños exploradores.
+                         Ideal para jugar, aprender y disfrutar de cada aventura</p>
+                </div>
+                <div class="category-card">
+                    <h3>Mascotas</h3>
+                    <img src="{% static 'img/mascota.jpg' %}" alt="Mascota" class="category-image">
+                    <p>"Moda adorable y funcional para tus amigos peludos. 
+                        Perfecta para paseos, juegos y momentos especiales juntos</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
