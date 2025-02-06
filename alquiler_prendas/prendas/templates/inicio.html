@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Moda circular</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/inicio.css' %}">   
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio 
+                <img class="icon_inicio" src="{% static 'img/inicio.png' %}" alt="inicio" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </a></li>
+                <li><a href="#">Prendas
+                <img class="icon_inicio" src="{% static 'img/prendas.png' %}" alt="prendas" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </a></li>
+                <li><a href="{% url 'categorias' %}">Categorías</a>
+                    <img class="icon_inicio" src="{% static 'img/categorias.png' %}" alt="categorias" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </li>
+                <li><a href="#">Sobre Nosotros</a>
+                    <img class="icon_inicio" src="{% static 'img/nosotros.png' %}" alt="sobre_nosotros" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </li>
+                <li><a href="#">Cómo Funciona</a>
+                    <img class="icon_inicio" src="{% static 'img/funciona.png' %}" alt="funciona" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </li>
+                <li><a href="#">Testimonios</a>
+                    <img class="icon_inicio" src="{% static 'img/testimonios.png' %}" alt="Testimonios" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </li>
+                <li><a href="#">Contacto</a>
+                    <img class="icon_inicio" src="{% static 'img/contacto.png' %}" alt="contacto" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </li>
+                <li><a href="#">Mi Cuenta</a>
+                    <img class="icon_inicio" src="{% static 'img/cuenta.png' %}" alt="cuenta" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </li>
+                <li><a href="#">Carrito</a>
+                    <img class="icon_inicio" src="{% static 'img/carrito.png' %}" alt="carrito" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Bienvenido a nuestra plataforma de moda circular</h1>
+        <p class="main-description">
+            Tu destino para una moda más sostenible y consciente. En nuestra plataforma, promovemos la moda circular, donde cada prenda cuenta una historia y cada elección tiene un impacto positivo en el medio ambiente.
+        </p>
+        <div class="card-container">
+                <div class="card">
+                    <h2>Alquila</h2>
+                    <img class="card-image" src="{% static 'img/alquila.webp' %}" alt="Usuario" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                    <p>Descubre la moda sin compromisos. Alquila prendas únicas y dale un nuevo aire a tu estilo, mientras cuidas del planeta.</p>
+                    <button class="action-button">¡Quiero Alquilar!</button>
+                </div>
+                <div class="card">
+                    <h2>Vende</h2>
+                    <img class="card-image" src="{% static 'img/vende.jpg' %}" alt="Usuario" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                    <p>Dale una segunda vida a tus prendas. Vende lo que ya no usas y contribuye a un ciclo de moda más sostenible.</p>
+                    <br>
+                    <button class="action-button">¡Quiero Vender!</button>
+                </div>
+                <div class="card">
+                    <h2>Compra</h2>
+                    <img class="card-image" src="{% static 'img/compra.jpg' %}" alt="Usuario" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                    <p>Compra de manera consciente. Encuentra prendas seleccionadas con amor y compromiso hacia la sostenibilidad.</p>
+                    <button class="action-button">¡Quiero Comprar!</button>
+                </div>
+            </div>
+    </main>
+</body>
+</html>

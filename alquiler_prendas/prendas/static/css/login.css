@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(to bottom right, #a8e6cf, #dcedc1); /* Degradado de verde claro a azul claro */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    width: 500px; /* Ancho para pantallas de PC */
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-header {
+    margin-bottom: 20px;
+}
+
+.user-icon {
+    width: 80px; /* Aumenta el tamaño del ícono */
+    height: 80px;
+    margin: 0 auto; /* Centra el ícono */
+}
+
+h1 {
+    color: #388e3c; /* Verde oscuro */
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #388e3c; /* Verde oscuro */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 90%;
+    padding: 10px;
+    background-color: #388e3c; /* Verde oscuro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2e7d32; /* Verde más oscuro al pasar el mouse */
+}
+
+.forgot-password {
+    margin: 10px 0;
+    color: #388e3c; /* Verde oscuro */
+}
+
+.social-login {
+    margin-top: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Centra los íconos sociales */
+}
+
+.social-icons img {
+    width: 30px; /* Ajusta el tamaño de los íconos sociales */
+    margin: 0 5px;
+}
