@@ -1,0 +1,44 @@
+.prendas-section, .nuevas-llegadas, .ofertas-especiales {
+    margin: 20px 0; /* Espaciado entre secciones */
+}
+
+.prendas-container {
+    display: flex; /* Usar flexbox para alinear las tarjetas en fila */
+    justify-content: center; /* Centra las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias filas */
+}
+
+.prenda-card {
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin: 10px; /* Espaciado entre tarjetas */
+    padding: 20px; /* Espaciado interno */
+    width: 250px; /* Ancho fijo para las tarjetas */
+    text-align: center; /* Centra el texto */
+    display: flex; /* Usar flexbox para alinear elementos */
+    flex-direction: column; /* Alinear elementos en columna */
+    justify-content: space-between; /* Espaciado uniforme entre elementos */
+    height: 350px; /* Altura fija para las tarjetas */
+}
+
+.prenda-card img {
+    width: 100%; /* Ancho completo */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 5px; /* Bordes redondeados para la imagen */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+.action-button {
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+.action-button:hover {
+    background-color: #45a049; /* Color de fondo al pasar el mouse */
+}

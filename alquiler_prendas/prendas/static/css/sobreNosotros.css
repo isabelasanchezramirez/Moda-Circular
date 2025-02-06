@@ -1,0 +1,80 @@
+/* Estilos para la sección "Sobre Nosotros" */
+.sobre-nosotros {
+    text-align: center; /* Centra el texto */
+    margin: 40px 0; /* Espaciado alrededor de la sección */
+}
+
+.sobre-nosotros-content {
+    display: flex; /* Usar flexbox para alinear el texto y la imagen */
+    justify-content: center; /* Centra el contenido */
+    align-items: center; /* Centra verticalmente */
+}
+
+.texto-sobre-nosotros {
+    flex: 1; /* Toma el espacio disponible */
+    padding-right: 20px; /* Espaciado a la derecha */
+}
+
+.imagen-sobre-nosotros img {
+    width: 50%; /* Ancho completo */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 50%; /* Bordes redondeados para la imagen */
+}
+
+/* Estilos para la sección "Nuestras Fases de Moda Circular" */
+.sobre-nosotros-cards {
+    text-align: center; /* Centra el texto */
+    margin: 40px 0; /* Espaciado alrededor de la sección */
+}
+
+.cards-container {
+    display: flex; /* Usar flexbox para alinear las tarjetas en fila */
+    justify-content: center; /* Centra las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias filas */
+}
+
+.card {
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin: 10px; /* Espaciado entre tarjetas */
+    padding: 20px; /* Espaciado interno */
+    width: 200px; /* Ancho fijo para las tarjetas */
+    transition: transform 0.3s; /* Transición suave para el efecto de hover */
+}
+
+.card img {
+    width: 100%; /* Ancho completo */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al hacer hover */
+}
+
+/* Estilos para la sección "Nuestra Misión y Visión" */
+.mision-vision {
+    text-align: center; /* Centra el texto */
+    margin: 40px 0; /* Espaciado alrededor de la sección */
+}
+
+.mision-vision-container {
+    display: flex; /* Usar flexbox para alinear las tarjetas en fila */
+    justify-content: center; /* Centra las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias filas */
+}
+
+.mision-vision .card {
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin: 10px; /* Espaciado entre tarjetas */
+    padding: 20px; /* Espaciado interno */
+    width: 200px; /* Ancho fijo para las tarjetas */
+    transition: transform 0.3s; /* Transición suave para el efecto de hover */
+}
+
+.mision-vision .card:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al hacer hover */
+}

@@ -16,13 +16,13 @@
                 <li><a a href="{% url 'inicio' %}">Inicio 
                 <img class="icon_inicio" src="{% static 'img/inicio.png' %}" alt="inicio" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
                 </a></li>
-                <li><a href="#">Prendas
-                <img class="icon_inicio" src="{% static 'img/prendas.png' %}" alt="prendas" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                <li><a href="{% url 'prendas' %}">Prendas
+                    <img class="icon_inicio" src="{% static 'img/prendas.png' %}" alt="prendas" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
                 </a></li>
-                <li><a href="#">Categorías</a>
+                <li><a href="{% url 'categorias' %}">Categorías</a>
                     <img class="icon_inicio" src="{% static 'img/categorias.png' %}" alt="categorias" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
                 </li>
-                <li><a href="#">Sobre Nosotros</a>
+                <li><a href="{% url 'sobreNosotros' %}">Sobre Nosotros</a>
                     <img class="icon_inicio" src="{% static 'img/nosotros.png' %}" alt="sobre_nosotros" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
                 </li>
                 <li><a href="#">Cómo Funciona</a>
@@ -45,8 +45,6 @@
     </header>
     <main>
         
-        
-        <!-- Sección de Categorías -->
         <section class="categories-section">
             <h2>Categorías</h2>
             <div class="categories-container">
@@ -57,6 +55,8 @@
                     <p>Versatilidad y estilo para cada ocasión.
                          Desde el día a día hasta eventos especiales, 
                          ¡cada prenda cuenta tu historia!</p>
+                         <button class="action-button">¡Ver más!</button>
+
                 </div>
                 <div class="category-card">
                     <h3>Niñas</h3>
@@ -65,6 +65,8 @@
                     <p>Moda divertida y cómoda para pequeñas 
                         aventureras. Perfectas para jugar, aprender y brillar 
                         en cualquier momento.</p>
+                        <button class="action-button">¡Ver más!</button>
+
                 </div>
                 <div class="category-card">
                     <h3>Hombres</h3>
@@ -73,18 +75,24 @@
                     <p>Estilo moderno y clásico para el hombre que se adapta
                          a cada situación. Desde la oficina hasta el fin de semana,
                           ¡siempre listo!</p>
+                          <button class="action-button">¡Ver más!</button>
+
                 </div>
                 <div class="category-card">
                     <h3>Niños</h3>
                     <img src="{% static 'img/nino.jpg' %}" alt="Nino" class="category-image">
                     <p>Ropa resistente y cómoda para los pequeños exploradores.
                          Ideal para jugar, aprender y disfrutar de cada aventura</p>
+                         <button class="action-button">¡Ver más!</button>
+
                 </div>
                 <div class="category-card">
                     <h3>Mascotas</h3>
                     <img src="{% static 'img/mascota.jpg' %}" alt="Mascota" class="category-image">
                     <p>"Moda adorable y funcional para tus amigos peludos. 
                         Perfecta para paseos, juegos y momentos especiales juntos</p>
+                        <button class="action-button">¡Ver más!</button>
+
                 </div>
             </div>
         </section>

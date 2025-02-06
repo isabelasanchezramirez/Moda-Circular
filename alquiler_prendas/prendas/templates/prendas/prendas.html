@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Categorias</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/inicio.css' %}">   
+    <link rel="stylesheet" type="text/css" href="{% static 'css/categorias.css' %}">   
+    <link rel="stylesheet" type="text/css" href="{% static 'css/prendas.css' %}">   
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a a href="{% url 'inicio' %}">Inicio 
+                <img class="icon_inicio" src="{% static 'img/inicio.png' %}" alt="inicio" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </a></li>
+                <li><a href="#">Prendas
+                <img class="icon_inicio" src="{% static 'img/prendas.png' %}" alt="prendas" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </a></li>
+                <li><a href="{% url 'categorias' %}">Categorías</a>
+                    <img class="icon_inicio" src="{% static 'img/categorias.png' %}" alt="categorias" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </li>
+                <li><a href="{% url 'sobreNosotros' %}">Sobre Nosotros</a>
+                    <img class="icon_inicio" src="{% static 'img/nosotros.png' %}" alt="sobre_nosotros" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </li>
+                <li><a href="#">Cómo Funciona</a>
+                    <img class="icon_inicio" src="{% static 'img/funciona.png' %}" alt="funciona" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </li>
+                <li><a href="#">Testimonios</a>
+                    <img class="icon_inicio" src="{% static 'img/testimonios.png' %}" alt="Testimonios" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </li>
+                <li><a href="#">Contacto</a>
+                    <img class="icon_inicio" src="{% static 'img/contacto.png' %}" alt="contacto" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </li>
+                <li><a href="#">Mi Cuenta</a>
+                    <img class="icon_inicio" src="{% static 'img/cuenta.png' %}" alt="cuenta" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </li>
+                <li><a href="#">Carrito</a>
+                    <img class="icon_inicio" src="{% static 'img/carrito.png' %}" alt="carrito" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="prendas-section">
+            <h2>Prendas Destacadas</h2>
+            <div class="prendas-container">
+                <div class="prenda-card">
+                    <img src="{% static 'images/prenda1.jpg' %}" alt="Prenda 1">
+                    <h3>Nombre de la Prenda 1</h3>
+                    <p>Descripción breve de la prenda 1.</p>
+                </div>
+                <div class="prenda-card">
+                    <img src="{% static 'images/prenda2.jpg' %}" alt="Prenda 2">
+                    <h3>Nombre de la Prenda 2</h3>
+                    <p>Descripción breve de la prenda 2.</p>
+                </div>
+                <div class="prenda-card">
+                    <img src="{% static 'images/prenda3.jpg' %}" alt="Prenda 3">
+                    <h3>Nombre de la Prenda 3</h3>
+                    <p>Descripción breve de la prenda 3.</p>
+                </div>
+                <div class="prenda-card">
+                    <img src="{% static 'images/prenda4.jpg' %}" alt="Prenda 4">
+                    <h3>Nombre de la Prenda 4</h3>
+                    <p>Descripción breve de la prenda 4.</p>
+                </div>
+            </div>
+        </section>
+        <button class="action-button">¡Ver más!</button>
+
+        <section class="nuevas-llegadas">
+            <h2>Nuevas Llegadas</h2>
+            <div class="prendas-container">
+                <div class="prenda-card">
+                    <img src="{% static 'images/nueva1.jpg' %}" alt="Nueva Prenda 1">
+                    <h3>Nueva Prenda 1</h3>
+                    <p>Descripción breve de la nueva prenda 1.</p>
+                </div>
+                <div class="prenda-card">
+                    <img src="{% static 'images/nueva2.jpg' %}" alt="Nueva Prenda 2">
+                    <h3>Nueva Prenda 2</h3>
+                    <p>Descripción breve de la nueva prenda 2.</p>
+                </div>
+            </div>
+        </section>
+        <button class="action-button">¡Ver más!</button>
+
+        <section class="ofertas-especiales">
+            <h2>Ofertas Especiales</h2>
+            <div class="prendas-container">
+                <div class="prenda-card">
+                    <img src="{% static 'images/oferta1.jpg' %}" alt="Oferta Prenda 1">
+                    <h3>Oferta Prenda 1</h3>
+                    <p>Descripción breve de la oferta prenda 1.</p>
+                </div>
+                <div class="prenda-card">
+                    <img src="{% static 'images/oferta2.jpg' %}" alt="Oferta Prenda 2">
+                    <h3>Oferta Prenda 2</h3>
+                    <p>Descripción breve de la oferta prenda 2.</p>
+                </div>
+
+            </div>
+        </section>
+        <button class="action-button">¡Ver más!</button>
+
+
+    </main>
+    </body>
+    </html>

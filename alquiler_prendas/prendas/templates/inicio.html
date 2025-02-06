@@ -11,16 +11,16 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">Inicio 
-                <img class="icon_inicio" src="{% static 'img/inicio.png' %}" alt="inicio" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
+                <li><a a href="{% url 'inicio' %}">Inicio 
+                    <img class="icon_inicio" src="{% static 'img/inicio.png' %}" alt="inicio" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
                 </a></li>
-                <li><a href="#">Prendas
+                <li><a href="{% url 'prendas' %}">Prendas
                 <img class="icon_inicio" src="{% static 'img/prendas.png' %}" alt="prendas" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
                 </a></li>
                 <li><a href="{% url 'categorias' %}">Categorías</a>
                     <img class="icon_inicio" src="{% static 'img/categorias.png' %}" alt="categorias" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
                 </li>
-                <li><a href="#">Sobre Nosotros</a>
+                <li><a href="{% url 'sobreNosotros' %}">Sobre Nosotros</a>
                     <img class="icon_inicio" src="{% static 'img/nosotros.png' %}" alt="sobre_nosotros" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
                 </li>
                 <li><a href="#">Cómo Funciona</a>

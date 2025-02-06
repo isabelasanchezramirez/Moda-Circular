@@ -2,12 +2,6 @@ from django.shortcuts import render, redirect
 from .models import Prenda
 from .models import Usuario
 
-def lista_prendas(request):
-    prendas = Prenda.objects.all()  # Obtener todas las prendas
-    return render(request, 'prendas/lista_prendas.html', {'prendas': prendas})
-#def lista_categorias(request):
-    #categorias = Categoria.objects.all()  # Obtener todas las categorías
-    #return render(request, 'categorias/lista_categorias.html', {'categorias': categorias})
 def login(request):
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -27,3 +21,14 @@ def inicio(request):
 
 def categorias(request):
     return render(request, 'categorias/categorias.html')
+
+def prendas(request):
+    return render(request, 'prendas/prendas.html')
+
+def sobreNosotros(request):
+    return render(request, 'sobreNosotros/sobreNosotros.html')
+
+
+
+
+
