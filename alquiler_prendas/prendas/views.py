@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import Prenda
-from .models import Usuario
+from .models import Usuario, Categoria, Testimonio
 
 def login(request):
     if request.method == 'POST':
@@ -19,8 +18,11 @@ def login(request):
 def inicio(request):
     return render(request, 'inicio.html')
 
+
+
 def categorias(request):
-    return render(request, 'categorias/categorias.html')
+    categorias = Categoria.objects.all()  # Obtiene todas las categorías
+    return render(request, 'categorias/categorias.html', {'categorias': categorias})
 
 def prendas(request):
     return render(request, 'prendas/prendas.html')
@@ -29,6 +31,10 @@ def sobreNosotros(request):
     return render(request, 'sobreNosotros/sobreNosotros.html')
 
 
+def testimonios(request):
+    testimonios = Testimonio.objects.all()  # Obtiene todos los testimonios
+    return render(request, 'testimonios/testimonios.html', {'testimonios': testimonios})
+# Obtiene todos los testimonios
 
 
 

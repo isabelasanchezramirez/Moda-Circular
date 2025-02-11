@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import prendas, login, inicio, categorias, sobreNosotros
+from .views import prendas, login, inicio, categorias, sobreNosotros, testimonios
 from . import views
 urlpatterns = [
     path('', login, name='login'), 
@@ -7,5 +7,6 @@ urlpatterns = [
     path('prendas/', prendas, name='prendas'),  # Cambia la URL para la lista de prendas
     path('categorias/', categorias, name='categorias'),
     path('sobreNosotros/',sobreNosotros, name='sobreNosotros'),
-    path('inicio/', inicio, name='inicio'),  # URL para la vista de inicio
+    path('inicio/', inicio, name='inicio'), 
+    path('testimonios/', testimonios, name='testimonios'), # URL para la vista de inicio
 ]
