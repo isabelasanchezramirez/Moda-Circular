@@ -1,22 +1,26 @@
+
 /* Estilos para la sección "Sobre Nosotros" */
 .sobre-nosotros {
     text-align: center; /* Centra el texto */
     margin: 40px 0; /* Espaciado alrededor de la sección */
+
 }
 
 .sobre-nosotros-content {
     display: flex; /* Usar flexbox para alinear el texto y la imagen */
-    justify-content: center; /* Centra el contenido */
+    justify-content: space-between; /* Centra el contenido */
     align-items: center; /* Centra verticalmente */
 }
 
 .texto-sobre-nosotros {
     flex: 1; /* Toma el espacio disponible */
     padding-right: 20px; /* Espaciado a la derecha */
+
+
 }
 
 .imagen-sobre-nosotros img {
-    width: 50%; /* Ancho completo */
+    width: 40%; /* Ancho completo */
     height: auto; /* Mantiene la proporción */
     border-radius: 50%; /* Bordes redondeados para la imagen */
 }
@@ -32,6 +36,12 @@
     justify-content: center; /* Centra las tarjetas */
     flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias filas */
 }
+.sobre-nosotros-card {
+    display: flex; /* Usar flexbox para centrar la tarjeta */
+    justify-content: center; /* Centra la tarjeta */
+    margin: 40px 0; /* Espaciado alrededor de la sección */
+}
+
 
 .card {
     background-color: white; /* Fondo blanco */
@@ -44,9 +54,10 @@
 }
 
 .card img {
-    width: 100%; /* Ancho completo */
+    width: 50%; /* Cambia el ancho a un porcentaje menor */
     height: auto; /* Mantiene la proporción */
     border-radius: 10px; /* Bordes redondeados para la imagen */
+    margin-bottom: 10px; /* Espaciado inferior para separar la imagen del texto */
 }
 
 .card:hover {

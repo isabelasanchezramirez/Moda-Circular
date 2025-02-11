@@ -1,151 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
+{% extends 'base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>Categorias</title>
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'css/inicio.css' %}">   
-    <link rel="stylesheet" type="text/css" href="{% static 'css/categorias.css' %}">   
-    <link rel="stylesheet" type="text/css" href="{% static 'css/prendas.css' %}">   
-    <link rel="stylesheet" type="text/css" href="{% static 'css/sobreNosotros.css' %}">   
+{% block title %}Sobre Nosotros{% endblock %}
 
-    <style>
-/* Estilos para la sección "Sobre Nosotros" */
-.sobre-nosotros {
-    text-align: center; /* Centra el texto */
-    margin: 40px 0; /* Espaciado alrededor de la sección */
-}
-
-.sobre-nosotros-content {
-    display: flex; /* Usar flexbox para alinear el texto y la imagen */
-    justify-content: space-between; /* Centra el contenido */
-    align-items: center; /* Centra verticalmente */
-}
-
-.texto-sobre-nosotros {
-    flex: 1; /* Toma el espacio disponible */
-    padding-right: 20px; /* Espaciado a la derecha */
-
-
-}
-
-.imagen-sobre-nosotros img {
-    width: 40%; /* Ancho completo */
-    height: auto; /* Mantiene la proporción */
-    border-radius: 50%; /* Bordes redondeados para la imagen */
-}
-
-/* Estilos para la sección "Nuestras Fases de Moda Circular" */
-.sobre-nosotros-cards {
-    text-align: center; /* Centra el texto */
-    margin: 40px 0; /* Espaciado alrededor de la sección */
-}
-
-.cards-container {
-    display: flex; /* Usar flexbox para alinear las tarjetas en fila */
-    justify-content: center; /* Centra las tarjetas */
-    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias filas */
-}
-.sobre-nosotros-card {
-    display: flex; /* Usar flexbox para centrar la tarjeta */
-    justify-content: center; /* Centra la tarjeta */
-    margin: 40px 0; /* Espaciado alrededor de la sección */
-}
-.card-sobre-nosotros{
-    background-color: white;
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
-    margin: 10px; /* Espaciado entre tarjetas */
-    padding: 20px; /* Espaciado interno */
-
-
-
-}
-
-.card {
-    background-color: white; /* Fondo blanco */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
-    margin: 10px; /* Espaciado entre tarjetas */
-    padding: 20px; /* Espaciado interno */
-    width: 200px; /* Ancho fijo para las tarjetas */
-    transition: transform 0.3s; /* Transición suave para el efecto de hover */
-}
-
-.card img {
-    width: 50%; /* Cambia el ancho a un porcentaje menor */
-    height: auto; /* Mantiene la proporción */
-    border-radius: 10px; /* Bordes redondeados para la imagen */
-    margin-bottom: 10px; /* Espaciado inferior para separar la imagen del texto */
-}
-
-.card:hover {
-    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al hacer hover */
-}
-
-/* Estilos para la sección "Nuestra Misión y Visión" */
-.mision-vision {
-    text-align: center; /* Centra el texto */
-    margin: 40px 0; /* Espaciado alrededor de la sección */
-}
-
-.mision-vision-container {
-    display: flex; /* Usar flexbox para alinear las tarjetas en fila */
-    justify-content: center; /* Centra las tarjetas */
-    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en varias filas */
-}
-
-.mision-vision .card {
-    background-color: white; /* Fondo blanco */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra */
-    margin: 10px; /* Espaciado entre tarjetas */
-    padding: 20px; /* Espaciado interno */
-    width: 200px; /* Ancho fijo para las tarjetas */
-    transition: transform 0.3s; /* Transición suave para el efecto de hover */
-}
-
-.mision-vision .card:hover {
-    transform: scale(1.05); /* Aumenta el tamaño de la tarjeta al hacer hover */
-}
-    </style>
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a a href="{% url 'inicio' %}">Inicio 
-                <img class="icon_inicio" src="{% static 'img/inicio.png' %}" alt="inicio" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
-                </a></li>
-                <li><a href="{% url 'prendas' %}">Prendas
-                <img class="icon_inicio" src="{% static 'img/prendas.png' %}" alt="prendas" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
-                </a></li>
-                <li><a href="{% url 'categorias' %}">Categorías</a>
-                    <img class="icon_inicio" src="{% static 'img/categorias.png' %}" alt="categorias" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
-                </li>
-                <li><a href="{% url 'sobreNosotros' %}">Sobre Nosotros</a>
-                    <img class="icon_inicio" src="{% static 'img/nosotros.png' %}" alt="sobre_nosotros" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
-                </li>
-                <li><a href="#">Cómo Funciona</a>
-                    <img class="icon_inicio" src="{% static 'img/funciona.png' %}" alt="funciona" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
-                </li>
-                <li><a href="#">Testimonios</a>
-                    <img class="icon_inicio" src="{% static 'img/testimonios.png' %}" alt="Testimonios" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
-                </li>
-                <li><a href="#">Contacto</a>
-                    <img class="icon_inicio" src="{% static 'img/contacto.png' %}" alt="contacto" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
-                </li>
-                <li><a href="#">Mi Cuenta</a>
-                    <img class="icon_inicio" src="{% static 'img/cuenta.png' %}" alt="cuenta" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
-                </li>
-                <li><a href="#">Carrito</a>
-                    <img class="icon_inicio" src="{% static 'img/carrito.png' %}" alt="carrito" class="user-icon"> <!-- Asegúrate de tener un ícono de usuario -->
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+{% block content %}
         
         <section class="sobre-nosotros">
             <section class="sobre-nosotros-card">
@@ -174,7 +31,7 @@
                     
                 </div>
                 <div class="imagen-sobre-nosotros">
-                    <img src="{% static 'img/logo.jpg' %}" alt="Sobre Nosotros">
+                    <img src="" alt="Sobre Nosotros">
                 </div>
                 
             </div>
@@ -187,18 +44,18 @@
             <div class="cards-container">
                 <div class="card">
                     <h3>Fase 1: Reducción</h3>
-                    <img src="{% static 'img/reduce.png' %}" alt="Fase 1">
+                    <img src="" alt="Fase 1">
                     <p>Reducir el consumo y optar por prendas de calidad que duren más.</p>
                 </div>
                 <div class="card">
                     <h3>Fase 2: Reutilización</h3>
-                    <img src="{% static 'img/reutiliza.png' %}" alt="Fase 1">
+                    <img src="" alt="Fase 1">
 
                     <p>Reutilizar prendas y darles una nueva vida a través del alquiler.</p>
                 </div>
                 <div class="card">
                     <h3>Fase 3: Reciclaje</h3>
-                    <img src="{% static 'img/recicla.png' %}" alt="Fase 1">
+                    <img src="" alt="Fase 1">
 
                     <p>Reciclar materiales para crear nuevas prendas y reducir residuos.</p>
                 </div>
@@ -227,6 +84,4 @@
             </div>
         </section>
         
-    </main>
-</body>
-</html>
+        {% endblock %}

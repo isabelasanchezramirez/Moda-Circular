@@ -1,8 +1,9 @@
 from django.urls import path
-from .views import prendas, login, inicio, categorias, sobreNosotros, testimonios
+from .views import prendas, login, inicio, categorias, sobreNosotros, testimonios, alquileres
 from . import views
 urlpatterns = [
-    path('', login, name='login'), 
+    path('', login, name='login'),
+     path('alquileres/', alquileres, name='alquileres'), 
     path('', views.inicio, name='inicio'), # La URL raíz apunta a la vista de login
     path('prendas/', prendas, name='prendas'),  # Cambia la URL para la lista de prendas
     path('categorias/', categorias, name='categorias'),

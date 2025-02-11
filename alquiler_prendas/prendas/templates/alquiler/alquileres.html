@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Alquileres{% endblock %}
+
+{% block content %}
+
+
+<section class="alquileres-section">
+    <h2>Alquileres</h2>
+    <div class="alquileres-container">
+        {% for alquiler in alquileres %}
+            <div class="alquiler-card">
+                <p>Prenda: {{ alquiler.prenda }}</p>
+                <p>Usuario: {{ alquiler.usuario }}</p>
+                <p>Fecha de Inicio: {{ alquiler.fecha_inicio }}</p>
+                <p>Fecha de Fin: {{ alquiler.fecha_fin }}</p>
+                <p>Estado: {{ alquiler.estado }}</p>
+                <p>Fecha de Creación: {{ alquiler.fecha_creacion }}</p>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+{% endblock %}

@@ -45,3 +45,19 @@ class Testimonio(models.Model):
 
     def __str__(self):
         return f'Testimonio de {self.usuario} - {self.fecha}'
+    
+
+#ALQUILAR
+class Alquiler(models.Model):
+    usuario = models.ForeignKey('usuario', on_delete=models.CASCADE)  # Referencia al usuario
+    prenda = models.ForeignKey('prenda', on_delete=models.CASCADE)    # Referencia a la prenda
+    fecha_inicio = models.DateTimeField()
+    fecha_fin = models.DateTimeField()
+    estado = models.CharField(max_length=50, default='activo')         # Estado del alquiler
+    fecha_creacion = models.DateTimeField(auto_now_add=True)           # Fecha de creación automática
+
+    class Meta:
+        db_table = 'alquiler'  
+
+    def __str__(self):
+        return f'Alquiler de {self.prenda} por {self.usuario}'
